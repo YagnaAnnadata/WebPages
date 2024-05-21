@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yagna Srinivasa Harsha Annadata</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px;
+            position: relative;
+            z-index: 10;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin: 20px 0;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-img:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+        .name {
+            font-size: 2.5em;
+            color: #4169e1;
+            margin-bottom: 20px;
+            animation: colorchange 4s infinite;
+        }
+        .bio {
+            margin: 20px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+        }
+        .links a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            display: inline-block;
+            border-radius: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .links a.linkedin {
+            background-color: #0077b5;
+        }
+        .links a.github {
+            background-color: #333;
+        }
+        .links a.resume {
+            background-color: #ffeb3b;
+            color: #333;
+        }
+        .links a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes colorchange {
+            0% { color: #4169e1; }
+            50% { color: #ff4500; }
+            100% { color: #4169e1; }
+        }
+        .parallax {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'), linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            background-attachment: fixed;
+            background-size: cover;
+            z-index: -1;
+            filter: blur(3px);
+        }
+        .sticker {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 1s;
+            z-index: 20;
+        }
+        .sticker-container {
+            position: absolute;
+            top: 75px;
+            left: 47%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .sticker-emoji {
+            font-size: 30px;
+            animation: wave 2s infinite;
+        }
+        @keyframes wave {
+            0%, 100% { transform: rotate(0); }
+            25% { transform: rotate(-15deg); }
+            75% { transform: rotate(15deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax"></div>
+    <div class="container">
+        <img src="https://github.com/YagnaAnnadata/WebPages/blob/main/Yagna/IMG_6940.JPG?raw=true" alt="Yagna Srinivasa Harsha Annadata" class="profile-img">
+        <div class="name">Yagna Srinivasa Harsha Annadata</div>
+        <div class="bio">
+            <p>As a graduate student specializing in Computer Engineering with a focus on Embedded Systems and VLSI, I've honed my skills through hands-on experience and academic rigor. My journey began at the University of Texas at Dallas, where I delved into the intricacies of system integration and validation protocols. This led me to a rewarding internship at Intel Corporation, where I tackled challenges head-on, resolving issues with Type C USB and Thunderbolt functionalities, and consistently achieving exceptional product quality ratings. My commitment to excellence extended to my role as a Graduate Teaching Assistant, where I guided students in navigating the complexities of embedded systems, fostering a 100% project completion rate.</p>
+            <p>Beyond academia and industry, I'm passionate about leveraging technology for social impact. My research projects, such as exploring energy-efficient pathways through Processing-In-Memory and pioneering drone applications in precision agriculture, reflect this commitment. Through volunteering as a TinyML Workshop Supervisor, I've empowered students to excel in emerging technologies, nurturing their skills in motion, audio, and image recognition. With a solid foundation in technical expertise and a dedication to continuous learning and growth, I am poised to contribute effectively as a System Validation Engineer, ensuring the reliability and performance of cutting-edge technologies.</p>
+        </div>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/yagna-srinivasa-harsha-annadata/" class="linkedin" target="_blank">LinkedIn</a>
+            <a href="https://github.com/YagnaAnnadata" class="github" target="_blank">GitHub</a>
+            <a href="https://github.com/YagnaAnnadata/Resume/blob/main/Yagna_Annadata.pdf" class="resume" target="_blank">Resume</a>
+        </div>
+    </div>
+    <div class="sticker-container">
+        <div class="sticker" id="sticker1">Hello!</div>
+        <div class="sticker" id="sticker2">Welcome!</div>
+        <div class="sticker" id="sticker3">Thanks for looking at my website!</div>
+        <div class="sticker" id="sticker4">Have a great day!</div>
+    </div>
+    <script>
+        const stickers = document.querySelectorAll('.sticker');
+        let currentSticker = 0;
+
+        function showSticker(index) {
+            if (index > 0) {
+                stickers[index - 1].style.opacity = 0;
+            }
+            if (index < stickers.length) {
+                stickers[index].style.opacity = 1;
+                setTimeout(() => showSticker(index + 1), 3000);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => showSticker(0), 500);
+        });
+    </script>
+</body>
+</html>
