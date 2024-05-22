@@ -18,20 +18,19 @@
             height: 100vh;
             text-align: center;
             overflow-x: hidden;
-			padding-top: 50px;
+            padding-top: 50px;
         }
         .container {
             background: rgba(255, 255, 255, 0.9);
-            padding: 40px;
+            padding: 20px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            max-width: 90%;
+            max-width: 600px;
             margin: 20px;
             position: relative;
             z-index: 10;
             animation: fadeIn 2s ease-in-out;
-			position: relative;
-			top: 50px;
+            position: relative;
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
@@ -110,7 +109,7 @@
             opacity: 0;
             transition: opacity 1s;
             z-index: 20;
-			font-size: 1em;
+            font-size: 1em;
         }
         .sticker-container {
             position: absolute;
@@ -130,44 +129,62 @@
             25% { transform: rotate(-15deg); }
             75% { transform: rotate(15deg); }
         }
-		@media only screen and (max-width: 768px) {
-			.container {
-				max-width: 90%;
-				top: 20px;
-			}
-		}
-
-		@media only screen and (max-width: 600px) {
-			body {
-				padding-top: 600px; /* Adjust padding for smaller screens if necessary */
-		}
-			.container {
-			max-width: 90%;
-		}
-
-		.profile-img {
-			width: 100px;
-			height: 100px;
-		}
-
-		.name {
-			font-size: 1.5em;
-		}
-
-		.bio {
-			font-size: 0.9em;
-		}
-
-		.sticker {
-			padding: 8px 14px;
-			font-size: 0.9em;
-		}
-
-		.links a {
-			padding: 6px 12px;
-			margin: 6px;
-		}
-	}
+        @keyframes handWave {
+            0%, 100% { transform: rotate(0); }
+            25% { transform: rotate(-15deg); }
+            75% { transform: rotate(15deg); }
+        }
+        .hand {
+            position: absolute;
+            bottom: 500px;
+            right: 50px;
+            width: 40px;
+            height: 40px;
+            background: #ffeb3b;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: handWave 2s;
+            transition: opacity 5s;
+            z-index: 20;
+            opacity: 1;
+        }
+        @media only screen and (max-width: 768px) {
+            .container {
+                max-width: 90%;
+                top: 20px;
+                padding: 20px;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding-top: 600px; /* Adjust padding for smaller screens if necessary */
+            }
+            .container {
+                max-width: 90%;
+            }
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+            .name {
+                font-size: 1.5em;
+            }
+            .bio {
+                font-size: 0.9em;
+            }
+            .sticker {
+                padding: 8px 14px;
+                font-size: 0.9em;
+            }
+            .links a {
+                padding: 6px 12px;
+                margin: 6px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -176,9 +193,7 @@
         <img src="https://github.com/YagnaAnnadata/WebPages/blob/main/Yagna/IMG_6940.JPG?raw=true" alt="Yagna Srinivasa Harsha Annadata" class="profile-img">
         <div class="name">Yagna Srinivasa Harsha Annadata</div>
         <div class="bio">
-            <p>I'm Yagna Srinivasa Harsha Annadata, on a quest to unravel the mysteries of technology while leaving a trail of innovation in my wake. Currently pursuing an MS-Thesis in Computer Engineering at the University of Texas at Dallas. My academic voyage has been nothing short of exhilarating, delving into realms like Tiny Machine Learning for Embedded Systems, Type-C SubSystems, Hardware and Software Validation, Automation. At Intel Corporation, I found myself at the forefront of innovation, crafting and executing integration and validation protocols for the most cutting-edge mobile platforms. Transitioning from OpenText's software environment to Intel's hardware domain has broadened my expertise as a computer engineer. This blend of experiences has provided me with a solid understanding of both hardware and software, facilitating smooth integration and validation processes. With this background, I approach engineering challenges with efficiency, emphasizing a holistic approach. Beyond the corporate arena, I've delved into cutting-edge research projects like Processing-In-Memory and explored the transformative potential of Drone Applications in Agriculture with TinyML. But my journey isn't just about professional milestones; it's also about giving back and inspiring the next generation. Whether it's mentoring students, spearheading workshops, or contributing to the community through initiatives like IEEE DCAS 2024, I'm driven by a passion to ignite curiosity and cultivate excellence. As I continue on my journey in the dynamic field of computer engineering, I'm committed to pushing boundaries, fostering innovation, and making a positive impact on the world around me.</p>
-
-​
+            <p>I'm Yagna Srinivasa Harsha Annadata, currently pursuing an MS-Thesis in Computer Engineering at the University of Texas at Dallas. My academic journey has been exciting, with a focus on areas such as Tiny Machine Learning for Embedded Systems, Type-C SubSystems, and Hardware and Software Validation and Automation. I developed and executed integration and validation protocols for advanced mobile platforms. This experience, coupled with my transition from OpenText's software environment to Intel's hardware domain, has given me a well-rounded understanding of both hardware and software, enabling seamless integration and validation processes. Beyond the corporate arena, I've delved into cutting-edge research projects like Processing-In-Memory and explored the transformative potential of Drone Applications in Agriculture with TinyML. But my journey isn't just about professional milestones; it's also about giving back and inspiring the next generation. Whether it's mentoring students, supervising workshops, or contributing to the community through initiatives like IEEE DCAS 2024, I'm driven by a passion to ignite curiosity and cultivate excellence. As I continue on my journey in the dynamic field of computer engineering, I remain committed to pushing the boundaries of technology, driving innovation, and making a positive impact on the world.</p>
         </div>
         <div class="links">
             <a href="https://www.linkedin.com/in/yagna-srinivasa-harsha-annadata/" class="linkedin" target="_blank">LinkedIn</a>
@@ -192,6 +207,7 @@
         <div class="sticker" id="sticker3">Thanks for visiting my website!</div>
         <div class="sticker" id="sticker4">Have a great day!</div>
     </div>
+    <div class="hand">👋</div>
     <script>
         const stickers = document.querySelectorAll('.sticker');
         let currentSticker = 0;
@@ -209,6 +225,11 @@
         document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => showSticker(0), 500);
         });
+
+        // Hide the hand after 5 seconds
+        setTimeout(() => {
+            document.querySelector('.hand').style.opacity = 0;
+        }, 5000);
     </script>
 </body>
 </html>
