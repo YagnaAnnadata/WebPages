@@ -84,7 +84,7 @@ body.opened #site{opacity:1;visibility:visible}
 .event{--accent:#b48587;--wash:#f9eae8;--deep:#764b58;position:relative;min-height:400px;display:grid;grid-template-columns:42% 58%;overflow:hidden;background:linear-gradient(125deg,#fffefa,#fff7f3);border:1px solid #ead7d1;box-shadow:0 13px 45px #86616b13;border-radius:3px}
 .event:nth-child(even){grid-template-columns:58% 42%}.event:nth-child(even) .art{order:2}
 .event.pellikuthuru{--accent:#bd924b;--wash:#f6eacb;--deep:#876140}
-.event.mehendi{--accent:#78916f;--wash:#e9f0e4;--deep:#567253}
+.event.Mehendi{--accent:#78916f;--wash:#e9f0e4;--deep:#567253}
 .event.vratham{--accent:#c38d76;--wash:#f2e1d6;--deep:#875b51}
 .event.reception{--accent:#aa829e;--wash:#f0e2eb;--deep:#76516d}
 .art{position:relative;display:grid;place-items:center;min-height:370px;overflow:hidden;background:radial-gradient(ellipse at 50% 38%,#fffdfa 0%,var(--wash) 77%)}
@@ -167,17 +167,17 @@ body.opened .divine{animation:sacredReveal 1.35s cubic-bezier(.22,.68,.24,1) bot
 /* Illustrated animated ceremony scenes, all inline SVG; no image hosting or external assets */
 .art .ceremony-pic{display:block;width:255px;height:255px;max-width:78%;overflow:visible;position:relative;z-index:2;color:inherit;filter:drop-shadow(0 13px 18px #513c2712);animation:ceremonyHover 6s ease-in-out infinite}
 @keyframes ceremonyHover{0%,100%{transform:translateY(4px)}50%{transform:translateY(-5px)}}
-.pic-flower, .pic-sway,.pic-leaf-motion,.pic-mehendi-leaf{transform-box:fill-box;transform-origin:center bottom;animation:softSway 5s ease-in-out infinite}
+.pic-flower, .pic-sway,.pic-leaf-motion,.pic-Mehendi-leaf{transform-box:fill-box;transform-origin:center bottom;animation:softSway 5s ease-in-out infinite}
 .pic-flower.right,.pic-sway.right{animation-delay:-2s;animation-direction:alternate-reverse}
-.pic-mehendi-leaf.right{animation-delay:-2s}
+.pic-Mehendi-leaf.right{animation-delay:-2s}
 @keyframes softSway{0%,100%{rotate:-4deg}50%{rotate:5deg}}
 .pic-bowl,.pic-kalash{transform-box:fill-box;transform-origin:center bottom;animation:softRise 5.5s ease-in-out infinite}
 @keyframes softRise{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
 .float-particle,.pic-sparkles .twinkle{transform-box:fill-box;transform-origin:center;animation:particleTwinkle 3.3s ease-in-out infinite}
 .float-particle.p2,.twinkle.t2{animation-delay:-1s}.float-particle.p3,.twinkle.t3{animation-delay:-2s}
 @keyframes particleTwinkle{0%,100%{opacity:.28;transform:translateY(3px) scale(.7)}50%{opacity:1;transform:translateY(-7px) scale(1.13)}}
-.pic-henna .henna-draw{stroke-dasharray:140;stroke-dashoffset:140;animation:drawmehendi 6s ease-in-out infinite alternate}
-@keyframes drawmehendi{0%,7%{stroke-dashoffset:140}50%,100%{stroke-dashoffset:0}}
+.pic-henna .henna-draw{stroke-dasharray:140;stroke-dashoffset:140;animation:drawMehendi 6s ease-in-out infinite alternate}
+@keyframes drawMehendi{0%,7%{stroke-dashoffset:140}50%,100%{stroke-dashoffset:0}}
 .pic-diya .pic-flame,.pic-diya .pic-flame-core{transform-box:fill-box;transform-origin:center bottom;animation:lampFlicker 2.1s ease-in-out infinite alternate}
 .pic-diya.right .pic-flame,.pic-diya.right .pic-flame-core{animation-delay:-.8s}
 @keyframes lampFlicker{0%,100%{transform:scaleX(.9) rotate(-4deg)}50%{transform:scaleX(1.08) rotate(5deg)}}
@@ -199,16 +199,16 @@ body.opened .divine{animation:sacredReveal 1.35s cubic-bezier(.22,.68,.24,1) bot
 @keyframes sofaFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
 @media(prefers-reduced-motion:reduce){.pic-cone,.pic-sofa{animation:none!important}}
 
-/* A gentle ornamental hand and matching mehendi cones. */
-.mehendi-hands-art .pic-hand{transform-box:fill-box;transform-origin:center 85%;animation:mehendiHandBreathe 5.5s ease-in-out infinite}
-@keyframes mehendiHandBreathe{0%,100%{transform:rotate(-1.1deg) translateY(1px)}50%{transform:rotate(1.1deg) translateY(-2px)}}
-@media(prefers-reduced-motion:reduce){.mehendi-hands-art .pic-hand{animation:none}}
+/* A gentle ornamental hand and matching Mehendi cones. */
+.Mehendi-hands-art .pic-hand{transform-box:fill-box;transform-origin:center 85%;animation:MehendiHandBreathe 5.5s ease-in-out infinite}
+@keyframes MehendiHandBreathe{0%,100%{transform:rotate(-1.1deg) translateY(1px)}50%{transform:rotate(1.1deg) translateY(-2px)}}
+@media(prefers-reduced-motion:reduce){.Mehendi-hands-art .pic-hand{animation:none}}
 
 /* Miniature henna hands gently turn inward like a pair of bridal keepsakes. */
-.mehendi-cute-art .cute-hand{transform-box:fill-box;transform-origin:center 84%;animation:cuteHandSway 5.6s ease-in-out infinite}
-.mehendi-cute-art .cute-hand.right{animation-delay:-2.8s}
+.Mehendi-cute-art .cute-hand{transform-box:fill-box;transform-origin:center 84%;animation:cuteHandSway 5.6s ease-in-out infinite}
+.Mehendi-cute-art .cute-hand.right{animation-delay:-2.8s}
 @keyframes cuteHandSway{0%,100%{transform:translateY(2px) rotate(-1deg)}50%{transform:translateY(-2px) rotate(1deg)}}
-@media(prefers-reduced-motion:reduce){.mehendi-cute-art .cute-hand{animation:none}}
+@media(prefers-reduced-motion:reduce){.Mehendi-cute-art .cute-hand{animation:none}}
 
 /* Personalization refinements: long full names and parents remain legible. */
 .names{font-size:clamp(46px,8.4vw,89px);line-height:.97;letter-spacing:-.048em;max-width:850px;margin-left:auto;margin-right:auto}
@@ -380,19 +380,19 @@ body.opened .music-toggle{display:inline-flex}
 </svg></div>
         <div class="event-body"><span class="event-num">01 / A GOLDEN BEGINNING</span><h3 id="heading-pellikuthuru">Pellikuthuru</h3><p class="event-quote">Sunshine, turmeric & a little magic.</p><div class="event-facts"><div><label>Date &amp; Time</label><strong data-event-date="pellikuthuru">To be announced</strong><p data-event-time="pellikuthuru">Time to be announced</p></div><div><label>Venue</label><strong data-event-venue="pellikuthuru">To be announced</strong><p data-event-address="pellikuthuru">Hyderabad, Telangana</p></div></div></div>
       </section>
-      <section class="event mehendi" id="mehendi" aria-labelledby="heading-mehendi" data-reveal>
+      <section class="event Mehendi" id="Mehendi" aria-labelledby="heading-Mehendi" data-reveal>
         <div class="art" aria-hidden="true"><span class="shape s1">❧</span><span class="shape s2">✼</span>
-<svg class="ceremony-pic" viewBox="0 0 260 260" role="img" aria-label="Animated illustrated mehendi bowl, henna cones and jasmine flowers">
+<svg class="ceremony-pic" viewBox="0 0 260 260" role="img" aria-label="Animated illustrated Mehendi bowl, henna cones and jasmine flowers">
 <defs>
-<linearGradient id="mehendiBrass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff0ba"/><stop offset=".52" stop-color="#d2a360"/><stop offset="1" stop-color="#ad7844"/></linearGradient>
-<radialGradient id="mehendiGreen"><stop stop-color="#9eae73"/><stop offset=".7" stop-color="#618060"/><stop offset="1" stop-color="#426650"/></radialGradient>
+<linearGradient id="MehendiBrass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff0ba"/><stop offset=".52" stop-color="#d2a360"/><stop offset="1" stop-color="#ad7844"/></linearGradient>
+<radialGradient id="MehendiGreen"><stop stop-color="#9eae73"/><stop offset=".7" stop-color="#618060"/><stop offset="1" stop-color="#426650"/></radialGradient>
 </defs>
 <circle cx="130" cy="133" r="102" fill="#fbfff8" opacity=".58"/>
 <circle cx="130" cy="133" r="89" fill="none" stroke="#9aaf95" stroke-width="1.3" stroke-dasharray="2 9" opacity=".38"/>
 <path d="M49 206 Q131 225 210 206" fill="none" stroke="#9bb395" stroke-width="1.8" opacity=".55"/>
 <!-- Decorative leafy sprigs -->
-<g class="pic-mehendi-leaf left" transform="translate(39 94)"><path d="M3 55Q15 23 34 7" fill="none" stroke="#729474" stroke-width="2.4"/><path d="M15 29Q-5 26 0 8Q19 11 17 27M27 15Q27-2 45-5Q44 12 27 18M10 45Q-7 47-10 30Q5 28 13 40" fill="#8aa980" stroke="#668768" stroke-width="1.4"/></g>
-<g class="pic-mehendi-leaf right" transform="translate(184 90)"><path d="M4 53Q-11 24-28 12" fill="none" stroke="#729474" stroke-width="2.4"/><path d="M-8 31Q13 27 11 11Q-5 15-11 28M-24 18Q-28 0-46 0Q-40 17-24 20M0 44Q16 43 18 29Q5 30-2 40" fill="#85a57d" stroke="#608565" stroke-width="1.4"/></g>
+<g class="pic-Mehendi-leaf left" transform="translate(39 94)"><path d="M3 55Q15 23 34 7" fill="none" stroke="#729474" stroke-width="2.4"/><path d="M15 29Q-5 26 0 8Q19 11 17 27M27 15Q27-2 45-5Q44 12 27 18M10 45Q-7 47-10 30Q5 28 13 40" fill="#8aa980" stroke="#668768" stroke-width="1.4"/></g>
+<g class="pic-Mehendi-leaf right" transform="translate(184 90)"><path d="M4 53Q-11 24-28 12" fill="none" stroke="#729474" stroke-width="2.4"/><path d="M-8 31Q13 27 11 11Q-5 15-11 28M-24 18Q-28 0-46 0Q-40 17-24 20M0 44Q16 43 18 29Q5 30-2 40" fill="#85a57d" stroke="#608565" stroke-width="1.4"/></g>
 <!-- Simple, adorable thali -->
 <ellipse cx="132" cy="193" rx="74" ry="15" fill="#ac824e" opacity=".15"/>
 <ellipse cx="132" cy="185" rx="75" ry="18" fill="#b6874d"/>
@@ -409,9 +409,9 @@ body.opened .music-toggle{display:inline-flex}
 <!-- Cheerful brass henna bowl -->
 <g class="pic-bowl">
 <ellipse cx="145" cy="135" rx="48" ry="15" fill="#aa7f4d" opacity=".18"/>
-<path d="M95 135Q99 175 145 180Q191 175 195 135Z" fill="url(#mehendiBrass)" stroke="#ae7941" stroke-width="2.3"/>
+<path d="M95 135Q99 175 145 180Q191 175 195 135Z" fill="url(#MehendiBrass)" stroke="#ae7941" stroke-width="2.3"/>
 <ellipse cx="145" cy="133" rx="50" ry="15" fill="#e7c48d" stroke="#a77c49" stroke-width="2.2"/>
-<ellipse cx="145" cy="131" rx="44" ry="10.5" fill="url(#mehendiGreen)" stroke="#547555" stroke-width="1.5"/>
+<ellipse cx="145" cy="131" rx="44" ry="10.5" fill="url(#MehendiGreen)" stroke="#547555" stroke-width="1.5"/>
 <path d="M111 129Q122 122 136 127T166 127" fill="none" stroke="#b2c193" stroke-width="3" stroke-linecap="round" opacity=".8"/>
 <path d="M116 158Q143 176 173 158" fill="none" stroke="#fff3c4" stroke-width="2" opacity=".7"/>
 <path d="M118 168Q144 181 172 167" fill="none" stroke="#9d713f" stroke-width="1.5" opacity=".48"/>
@@ -425,7 +425,7 @@ body.opened .music-toggle{display:inline-flex}
 <g fill="#d8b45d"><path class="float-particle p1" d="M70 68l4 7 8 3-8 3-4 7-4-7-8-3 8-3z"/><path class="float-particle p2" d="M203 75l3 5 6 3-6 3-3 5-3-5-6-3 6-3z"/><circle class="float-particle p3" cx="90" cy="100" r="3"/></g>
 </svg></div>
         
-        <div class="event-body"><span class="event-num">02 / COLORS OF JOY</span><h3 id="heading-mehendi">mehendi</h3><p class="event-quote">Henna, laughter & memories in bloom.</p><div class="event-facts"><div><label>Date &amp; Time</label><strong data-event-date="mehendi">To be announced</strong><p data-event-time="mehendi">Time to be announced</p></div><div><label>Venue</label><strong data-event-venue="mehendi">To be announced</strong><p data-event-address="mehendi">Hyderabad, Telangana</p></div></div></div>
+        <div class="event-body"><span class="event-num">02 / COLORS OF JOY</span><h3 id="heading-Mehendi">Mehendi</h3><p class="event-quote">Henna, laughter & memories in bloom.</p><div class="event-facts"><div><label>Date &amp; Time</label><strong data-event-date="Mehendi">To be announced</strong><p data-event-time="Mehendi">Time to be announced</p></div><div><label>Venue</label><strong data-event-venue="Mehendi">To be announced</strong><p data-event-address="Mehendi">Hyderabad, Telangana</p></div></div></div>
       </section>
       <section class="event vratham" id="vratham" aria-labelledby="heading-vratham" data-reveal>
         <div class="art" aria-hidden="true"><span class="shape s1">✤</span><span class="shape s2">✧</span>
@@ -515,7 +515,7 @@ const CONFIG = {
   weddingMapsUrl: "https://www.google.com/maps/dir//Padmavathi+Convention+Halls+%26+INN,+R87R%2B94G,+near+Radha+Krishna+Rice+Mill,+Sipaipet,+Hasthinapuram,+Chirala,+Andhra+Pradesh+523165,+India/@45.5344128,-122.8837338,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a4a45007cf80235:0x21ad224adf90a2d4!2m2!1d80.3404306!2d15.8131664?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D",
   events: {
     pellikuthuru: {date:'Wednesday, November 25, 2026',time:'9:00 AM',venue:'Our Residence',address:'Bride’s family residence'},
-    mehendi: {date:'Wednesday, November 25, 2026',time:'6:00 PM',venue:'Our Residence',address:'Bride’s family residence'},
+    Mehendi: {date:'Wednesday, November 25, 2026',time:'6:00 PM',venue:'Our Residence',address:'Bride’s family residence'},
     vratham: {date:'Friday, November 27, 2026',time:'9:00 AM',venue:'Groom’s Residence',address:'Kavali, Andhra Pradesh'},
     reception: {date:'Friday, November 27, 2026',time:'7:30 PM',venue:'Brindavanam Colony Kalyana Mandapam',address:'Brundavanam Housing Colony Main Road, Vysya Colony, Kavali, Andhra Pradesh 524201',mapsUrl:"https://www.google.com/maps?sca_esv=1de6a5064e96f472&sxsrf=APpeQnvI-jvBe0sazoLjGmyyNmUodyMStA:1792644315945&biw=2048&bih=1044&gs_lp=Egxnd3Mtd2l6LXNlcnAiFGJyaW5kYXZhbiBjb2xvbnkga2FsKgsIABiABBjHARivATILEC4YgAQYxwEYrwEyBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FSIRJUABY3zRwAHgAkAEAmAHLAqAB5Q-qAQgxMy42LjAuMbABALgBA8gBAPgBAZgCFKAC6RPCAgQQIxgnwgIKECMY8AUYyQIYJ8ICChAjGMkCGPAFGCfCAgsQABiABBiKBRiRAsICCxAuGIAEGIoFGJECwgIREAAYgAQYigUYjQYYsQMYgwHCAhAQLhiABBiKBRhDGLEDGIMBwgIKEC4YgAQYigUYQ8ICChAAGIAEGIoFGEPCAggQABiABBixA8ICDRAuGIAEGIoFGEMYsQPCAhAQLhiABBiKBRhDGMcBGK8BwgIOEC4YgAQYsQMYxwEYrwHCAggQLhiABBi0B8ICCBAuGIAEGLEDwgILEAAYgAQYsQMYtAfCAggQABiABBi0B8ICBRAAGIAEwgIaEC4YgAQYigUYkQIYlwUY3AQY3gQY4ATYAQHCAgsQABiABBixAxiDAcICBRAuGIAEwgIKEAAYgAQYFBiHAsICFBAuGIAEGJcFGNwEGN4EGOAE2AEBmAMA4gMEGAAgXeIDBBgAIF7iAwQYACBf4gMEGAAgYOIDBBgAIGHiAwQYACBiugYGCAEQARgUkgcIMTAuOC4xLjGgB4vMArIHCDEwLjguMS4xuAfpE8IHCDItMi4xNS4zyAfwAYAIAQ&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=Kc3IpqIOfEs6MVrgAVOUTRrb&daddr=11-31-134,+Brundavanam+Housing+Colony+Main+Rd,+Vysya+colony,+Kavali,+Andhra+Pradesh+524201,+India"}
   },
